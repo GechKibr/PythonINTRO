@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'products',
+    'pages',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'trydjango.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/home/kali/tyrdjango/src/trydjango/templetes/'],
+        'DIRS':[Path(BASE_DIR,'templetes/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
